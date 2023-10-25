@@ -6,7 +6,7 @@ wrkbk = openpyxl.load_workbook(excel_file)
 sh = wrkbk.active
 d = gender.Detector(case_sensitive=False)
 
-column_number = input("Enter the number of the column that has the names: ")
+column_number = int(input("Enter the number of the column that has the names: "))
 
 # Loop over each row in the selected column that has the list names
 

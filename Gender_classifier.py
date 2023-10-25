@@ -11,7 +11,6 @@ column_number = input("Enter the number of the column that has the names: "
 # Loop over each row in the selected column that has the list names
 
 for i in range(1, sh.max_row+1):
-    column_number = 6
     cell_obj = sh.cell(row=i, column = column_number)
 
     if cell_obj.value is None or cell_obj.value == "":
